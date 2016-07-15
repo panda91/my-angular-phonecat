@@ -1,14 +1,20 @@
 <!doctype html>
-<html lang="en" ng-app>
-  <head>
+<html lang="en" ng-app="phonecatApp">
+
+<head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
-  </head>
-  <body>
+    <script type="text/javascript" src="phone-list/phone-list.module.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.component.js"></script>
+    <script type="text/javascript" src="phone-list/phone-list.component.js"></script>
+</head>
 
-    <p>Nothing here {{'yet' + '!'}}</p>
+<body ng-controller="PhoneListCtrl">
+    <phone-list></phone-list>
+    <p>Total number of phones: {{phones.length}}</p>
+</body>
 
-  </body>
 </html>
