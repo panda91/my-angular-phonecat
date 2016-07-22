@@ -66,16 +66,6 @@ describe('PhoneCat Application', function() {
         });
     });
 
-    describe('View: phone details', function() {
-        beforeEach(function() {
-            browser.get('index.html#!/phones/nexus-s');
-        });
-
-        it('should display placeholder page with "phoneId"', function() {
-            expect(element(by.binding('$ctrl.phoneId')).getText()).toBe('nexus-s');
-        });
-    });
-
     describe('View: Phone detail', function() {
 
         beforeEach(function() {
